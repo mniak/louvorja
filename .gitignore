@@ -1,7 +1,5 @@
 # Delphi compiler-generated binaries (safe to delete)
 *.exe
-!components/MonitorInfoView/*.exe
-!components/CnWizards/*.exe
 *.dll
 *.bpl
 *.bpi
@@ -41,3 +39,8 @@ __recovery/
 
 # Boss dependency manager vendor folder https://github.com/HashLoad/boss
 modules/
+
+# Dont ignore some files from the components folder
+!components/MonitorInfoView/*.exe
+!components/CnWizards/*.exe
+!components/bass24/
