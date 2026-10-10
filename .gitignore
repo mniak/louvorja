@@ -21,6 +21,7 @@
 *.cfg
 *.hpp
 *Resource.rc
+LouvorJA.res
 
 # Delphi local files (user-specific info)
 *.local
