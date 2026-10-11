@@ -57,6 +57,9 @@ Instação opcional. Serve para deixar o código com uma aparência mais organiz
 3. O pacote será exibido em seu Project Manager (normalmente a porção direita da tela) sob o nome `PngComponentsDesign250.bpl`. Clique com o botão direito nesse projeto e clique em "Install".
 4. Após instalado, pode fechar o projeto.
 
+### Bass
+Copie o arquivo /components/bass24/bass.dll para algum 
+
 ## Execução do Programa
 
 ### Altere a pasta de build do projeto

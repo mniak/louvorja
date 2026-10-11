@@ -81,8 +81,10 @@
         <UWP_DelphiLogo44>Arquivos Projeto\ico\Ícones Programa\Logo.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>Arquivos Projeto\ico\Ícones Programa\Logo.png</UWP_DelphiLogo150>
         <VerInfo_MinorVer>11</VerInfo_MinorVer>
-        <PostBuildEvent><![CDATA[echo Copying bass.dll
+        <PostBuildEvent><![CDATA[echo Copying Bass DLL
 copy .\components\bass24\bass.dll $(OUTPUTDIR)\bass.dll
+echo Copying OpenSSL DLLs
+copy .\components\openssl\$(Platform)\*.dll $(OUTPUTDIR)\
 $(PostBuildEvent)]]></PostBuildEvent>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
@@ -692,7 +694,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
         <PreBuildEventIgnoreExitCode>False</PreBuildEventIgnoreExitCode>
         <PreLinkEvent/>
         <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
-        <PostBuildEvent>echo Copying bass.dll&amp;&amp;copy .\components\bass24\bass.dll $(OUTPUTDIR)\bass.dll</PostBuildEvent>
+        <PostBuildEvent>echo Copying Bass DLL&amp;&amp;copy .\components\bass24\bass.dll $(OUTPUTDIR)\bass.dll&amp;&amp;echo Copying OpenSSL DLLs&amp;&amp;copy .\components\openssl\$(Platform)\*.dll $(OUTPUTDIR)\</PostBuildEvent>
         <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
     </PropertyGroup>
 </Project>
